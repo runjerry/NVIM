@@ -17,6 +17,8 @@ nnoremap <C-c> <Esc>
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+inoremap <expr> <Down> ("\<C-n>")
+inoremap <expr> <Up> ("\<C-p>")
 
 " Buffer operations
 " close buffer and left with previous one
@@ -37,19 +39,17 @@ inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap <TAB> >gv
 vnoremap <S-TAB> <gv
 
-" Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
-
 " for inserting pdb
 " command D :normal iimport pdb; pdb.set_trace()
 imap <F9> import pdb; pdb.set_trace()
 
-            " This is a quick way to call search-and-replace on a current word
-            nnoremap \s :%s/\<<C-r><C-w>\>//g<Left><Left>
-            " cc now hides those annoying search highlihghts after you're done searching
-            nnoremap cc :let @/ = ""<cr>
+" This is a quick way to call search-and-replace on a current word
+nnoremap \s :%s/\<<C-r><C-w>\>//g<Left><Left>
+" cc now hides those annoying search highlihghts after you're done searching
+nnoremap cc :let @/ = ""<cr>
 
 " ap for a quick .py file formatting
 nnoremap ap  :Autopep8<CR>
 
+" execute terminal commands
+nnoremap <Leader>e :!
