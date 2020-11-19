@@ -14,4 +14,4 @@ let g:airline#extensions#po#enabled = 0
 let g:airline#extensions#quickfix#enabled = 0
 let g:airline#extensions#netrw#enabled = 0
 let g:airline#extensions#coc#enabled = 0
-let g:airline#extensions#branch#enabled = 0
+" let g:airline#extensions#branch#enabled = 0

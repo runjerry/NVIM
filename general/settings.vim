@@ -50,12 +50,12 @@ set termguicolors
 " set background=dark                     " tell vim what the background color looks like
 
 " Copy paste between vim and everything else"
-set clipboard=unnamedplus               
-
-" " Copy and Paste cross files
+" Needs the following mapping to work
 " vnoremap <C-c> "*y
 " nnoremap <C-c> "*Y
 " nnoremap <C-p> "*p
+set clipboard+=unnamedplus               
+" set clipboard^=unnamed,unnamedplus
 
 " Disable auto match paren
 " let g:loaded_matchparen=1

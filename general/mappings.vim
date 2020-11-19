@@ -4,27 +4,43 @@ let mapleader=";"
 " nnoremap <Space> <Nop>
 
 " I hate escape more than anything else
-inoremap jk <Esc>
-inoremap kj <Esc>
+" inoremap jk <Esc>
+" inoremap kj <Esc>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 " Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
+nnoremap <C-w> :q!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 
+" Better nav
+nnoremap <C-u> <C-d>
+nnoremap <C-e> <C-u>
+" nnoremap <C-i> <C-u>
+" nnoremap <C-u> <C-f>
+nnoremap <C-d> <C-y>
+nnoremap <C-y> <C-f>
+nnoremap <C-f> <C-e>
+
+" nnoremap <C-u> <C-d>
+" nnoremap <C-u> <C-n>
+vnoremap <C-j> <C-d>
+vnoremap <C-k> <C-u>
+" vnoremap <C-d> <C-f>
+vnoremap <C-d> <C-b>
+
 " Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+inoremap <expr> <C-j> ("\<C-n>")
+inoremap <expr> <C-k> ("\<C-p>")
 inoremap <expr> <Down> ("\<C-n>")
 inoremap <expr> <Up> ("\<C-p>")
 
 " Buffer operations
 " close buffer and left with previous one
-nnoremap <Leader>q :bp<cr>:bd #<cr>
+nnoremap <Leader>w :bp<cr>:bd #<cr>
 " binding buffer
-nnoremap <Leader>b :Buffer<CR>
+nnoremap <Leader>j :Buffer<CR>
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
@@ -53,3 +69,4 @@ nnoremap ap  :Autopep8<CR>
 
 " execute terminal commands
 nnoremap <Leader>e :!
+nnoremap <Leader>G :Git<space>
