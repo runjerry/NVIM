@@ -24,7 +24,7 @@ require("plugin-config.surround")
 require("plugin-config.comment")
 require("plugin-config.nvim-autopairs")
 require("plugin-config.fidget")
-require("plugin-config.nvim-gdb")
+-- require("plugin-config.nvim-gdb")
 
 -- LSP settings
 require("lsp.setup")

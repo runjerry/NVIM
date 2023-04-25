@@ -235,7 +235,7 @@ packer.startup({
     -- git
     use({ "lewis6991/gitsigns.nvim" })
     -- debug
-    use("sakhnik/nvim-gdb")
+    -- use("sakhnik/nvim-gdb")
     -- use({
     --     'tanvirtin/vgit.nvim',
     --     requires = {"nvim-lua/plenary.nvim"}
