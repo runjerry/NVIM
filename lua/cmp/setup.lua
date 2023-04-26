@@ -69,10 +69,6 @@ cmp.setup({
       group_index = 1,
     },
     {
-      name = "vsnip",
-      group_index = 1,
-    },
-    {
       name = "nvim_lsp",
       group_index = 1,
     },

@@ -174,7 +174,9 @@ packer.startup({
     -- complete engine
     use("hrsh7th/nvim-cmp")
     -- Snippet engine
-    use("hrsh7th/vim-vsnip")
+    use("L3MON4D3/LuaSnip")
+    use("saadparwaiz1/cmp_luasnip")
+    -- use("hrsh7th/vim-vsnip")
     -- completion resource
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
